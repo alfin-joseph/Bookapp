@@ -90,7 +90,7 @@ def Bookstore(request):
             if i.store_name == name:
                 book = Book(Book_id=idd,store=i)
                 book.save()
-                return redirect('showbook')
+                return redirect('createstore')
             else:
                 return HttpResponse("failed")
     return Home(request)
